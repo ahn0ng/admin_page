@@ -225,6 +225,7 @@ aside {
   overflow: scroll;
   background-color: #eeeff1;
   position: relative;
+  overflow-x: hidden;
 }
 
 /* 공통 css */
@@ -268,6 +269,44 @@ aside {
   display: inline-block;
 }
 
+#todo_add {
+  cursor: pointer;
+}
+
+#todo_exit {
+  cursor: pointer;
+  display: none;
+}
+
+#input_box {
+  width: 90%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-bottom: 20px;
+  display: none;
+}
+#todo_input {
+  width: 85%;
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid #2d2d2d;
+}
+
+#todo_btn {
+  width: 5%;
+  border: 1px solid #2d2d2d;
+  padding: 2px 5px;
+  border-radius: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+#todo_btn:hover {
+  background-color: #f9b12e;
+  border: 1px solid #f9b12e;
+}
+
 #todo_list {
   display: flex;
   flex-direction: column;
@@ -275,12 +314,18 @@ aside {
   margin: 0 auto;
 }
 
-#todo_list span {
+.todo-item {
   margin-top: 10px;
 }
 
-#todo_list span:nth-child(1) {
+.todo-item:nth-child(1) {
   margin-top: 0px;
+}
+
+.del {
+  cursor: pointer;
+  margin-left: 5px;
+  /* display: none; */
 }
 
 /* todo */
@@ -326,6 +371,75 @@ aside {
   height: 95%;
 }
 /* calendar */
+
+/* user */
+
+#user {
+  width: 28%;
+  height: 630px;
+  margin-left: 2%;
+  margin-top: 2%;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
+  display: inline-block;
+}
+
+#user_list {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  margin: 0 auto;
+}
+
+.user_box {
+  width: 95%;
+  background-color: #eee;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.user_box:nth-child(1) {
+  margin-top: 5px;
+}
+
+.user_box p {
+  margin-top: 5px;
+}
+
+.user_info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.more_btn {
+  position: relative;
+  margin-top: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.more_exit_btn {
+  position: relative;
+  margin-top: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.account_list {
+  display: none;
+}
+
+.account_info {
+  width: 95%;
+  background-color: #ddd;
+  border-radius: 5px;
+  padding: 5px 0 5px 5px;
+  margin-top: 10px;
+}
+/* user */
 
 /* test */
 #test {

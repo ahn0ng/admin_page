@@ -7,7 +7,8 @@
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <title>Document</title>
 
-    <script src="js/jquery-3.6.0.js" type="text/javascript" text="javascript"></script>
+   
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="js/masonry.pkgd.min.js" type="text/javascript" text="javascript"></script>
     <script src="js/test.js" type="text/javascript" text="javascript"></script>
 </head>
@@ -70,11 +71,15 @@
                 <div class="section_header">
                     <img src="https://img.icons8.com/small/16/000000/todo-list.png" alt="todo"/>
                     <h2 class="section_title">To Do List</h2>
+                    <span id="todo_add"><img src="https://img.icons8.com/small/16/000000/plus-math.png"/></span>
+                    <span id="todo_exit"><img src="https://img.icons8.com/fluency-systems-regular/16/000000/x.png"/></span>
+                </div>
+                <div id="input_box">
+                    <input id="todo_input" type="text">
+                    <span id="todo_btn">추가</span>
                 </div>
                 <div id="todo_list" class="section_1_box">
-                    <span>운영자 페이지 만들기</span>
-                    <span>PC 버전 회의</span>
-                    <span>운영자 페이지 만들기</span>
+            
                 </div>
             </section>
             <section id="graph" class="item">
@@ -86,49 +91,239 @@
                   
                 </div>
             </section>
-            <section id="test" class="item">
+            <section id="user" class="item">
                 <div class="section_header">
-                    <img src="https://img.icons8.com/small/16/000000/todo-list.png" alt="todo"/>
-                    <h2 class="section_title">test List</h2>
+                    <img src="https://img.icons8.com/small/16/000000/user.png" alt="user"/>
+                    <h2 class="section_title">User List</h2>
                 </div>
-                <div id="todo_list" class="section_2h_box">
-                    <span>start</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>last</span>
+                <div id="user_list" class="section_2h_box">
+                    <div class="user_box">
+                        <div class="user_info">
+                            <div>
+                                <h3>이름 혹은 회사명</h3>
+                                <p>등록 된 계정 수 : <span>2</span></p>
+                                <p>남은 일 수 : <span>253일</span></p>
+                            </div>
+                            <span class="more_btn"><img src="https://img.icons8.com/windows/16/000000/expand-arrow--v1.png"/></span>
+                            <span class="more_exit_btn"><img src="https://img.icons8.com/ios/16/000000/collapse-arrow--v1.png"/></span>
+                        </div>
+                        
+                        <div class="account_list">
+                            <div class="account_info">
+                                <h4>이름이름 <span>기사님</span></h4>
+                                <p>abcd@abcd.com</p>
+                            </div>
+                            <div class="account_info">
+                                <h4>이름이름 <span>기사님</span></h4>
+                                <p>abcd@abcd.com</p>
+                            </div>
+                            <div class="account_info">
+                                <h4>이름이름 <span>기사님</span></h4>
+                                <p>abcd@abcd.com</p>
+                            </div>
+                        </div>
+                    </div>   <div class="user_box">
+                        <div class="user_info">
+                            <div>
+                                <h3>이름 혹은 회사명</h3>
+                                <p>등록 된 계정 수 : <span>2</span></p>
+                                <p>남은 일 수 : <span>253일</span></p>
+                            </div>
+                            <span class="more_btn"><img src="https://img.icons8.com/windows/16/000000/expand-arrow--v1.png"/></span>
+                            <span class="more_exit_btn"><img src="https://img.icons8.com/ios/16/000000/collapse-arrow--v1.png"/></span>
+                        </div>
+                        
+                        <div class="account_list">
+                            <div class="account_info">
+                                <h4>이름이름 <span>기사님</span></h4>
+                                <p>abcd@abcd.com</p>
+                            </div>
+                            <div class="account_info">
+                                <h4>이름이름 <span>기사님</span></h4>
+                                <p>abcd@abcd.com</p>
+                            </div>
+                            <div class="account_info">
+                                <h4>이름이름 <span>기사님</span></h4>
+                                <p>abcd@abcd.com</p>
+                            </div>
+                        </div>
+                    </div>   <div class="user_box">
+                        <div class="user_info">
+                            <div>
+                                <h3>이름 혹은 회사명</h3>
+                                <p>등록 된 계정 수 : <span>2</span></p>
+                                <p>남은 일 수 : <span>253일</span></p>
+                            </div>
+                            <span class="more_btn"><img src="https://img.icons8.com/windows/16/000000/expand-arrow--v1.png"/></span>
+                            <span class="more_exit_btn"><img src="https://img.icons8.com/ios/16/000000/collapse-arrow--v1.png"/></span>
+                        </div>
+                        
+                        <div class="account_list">
+                            <div class="account_info">
+                                <h4>이름이름 <span>기사님</span></h4>
+                                <p>abcd@abcd.com</p>
+                            </div>
+                            <div class="account_info">
+                                <h4>이름이름 <span>기사님</span></h4>
+                                <p>abcd@abcd.com</p>
+                            </div>
+                            <div class="account_info">
+                                <h4>이름이름 <span>기사님</span></h4>
+                                <p>abcd@abcd.com</p>
+                            </div>
+                        </div>
+                    </div>   <div class="user_box">
+                        <div class="user_info">
+                            <div>
+                                <h3>이름 혹은 회사명</h3>
+                                <p>등록 된 계정 수 : <span>2</span></p>
+                                <p>남은 일 수 : <span>253일</span></p>
+                            </div>
+                            <span class="more_btn"><img src="https://img.icons8.com/windows/16/000000/expand-arrow--v1.png"/></span>
+                            <span class="more_exit_btn"><img src="https://img.icons8.com/ios/16/000000/collapse-arrow--v1.png"/></span>
+                        </div>
+                        
+                        <div class="account_list">
+                            <div class="account_info">
+                                <h4>이름이름 <span>기사님</span></h4>
+                                <p>abcd@abcd.com</p>
+                            </div>
+                            <div class="account_info">
+                                <h4>이름이름 <span>기사님</span></h4>
+                                <p>abcd@abcd.com</p>
+                            </div>
+                            <div class="account_info">
+                                <h4>이름이름 <span>기사님</span></h4>
+                                <p>abcd@abcd.com</p>
+                            </div>
+                        </div>
+                    </div>   <div class="user_box">
+                        <div class="user_info">
+                            <div>
+                                <h3>이름 혹은 회사명</h3>
+                                <p>등록 된 계정 수 : <span>2</span></p>
+                                <p>남은 일 수 : <span>253일</span></p>
+                            </div>
+                            <span class="more_btn"><img src="https://img.icons8.com/windows/16/000000/expand-arrow--v1.png"/></span>
+                            <span class="more_exit_btn"><img src="https://img.icons8.com/ios/16/000000/collapse-arrow--v1.png"/></span>
+                        </div>
+                        
+                        <div class="account_list">
+                            <div class="account_info">
+                                <h4>이름이름 <span>기사님</span></h4>
+                                <p>abcd@abcd.com</p>
+                            </div>
+                            <div class="account_info">
+                                <h4>이름이름 <span>기사님</span></h4>
+                                <p>abcd@abcd.com</p>
+                            </div>
+                            <div class="account_info">
+                                <h4>이름이름 <span>기사님</span></h4>
+                                <p>abcd@abcd.com</p>
+                            </div>
+                        </div>
+                    </div>   <div class="user_box">
+                        <div class="user_info">
+                            <div>
+                                <h3>이름 혹은 회사명</h3>
+                                <p>등록 된 계정 수 : <span>2</span></p>
+                                <p>남은 일 수 : <span>253일</span></p>
+                            </div>
+                            <span class="more_btn"><img src="https://img.icons8.com/windows/16/000000/expand-arrow--v1.png"/></span>
+                            <span class="more_exit_btn"><img src="https://img.icons8.com/ios/16/000000/collapse-arrow--v1.png"/></span>
+                        </div>
+                        
+                        <div class="account_list">
+                            <div class="account_info">
+                                <h4>이름이름 <span>기사님</span></h4>
+                                <p>abcd@abcd.com</p>
+                            </div>
+                            <div class="account_info">
+                                <h4>이름이름 <span>기사님</span></h4>
+                                <p>abcd@abcd.com</p>
+                            </div>
+                            <div class="account_info">
+                                <h4>이름이름 <span>기사님</span></h4>
+                                <p>abcd@abcd.com</p>
+                            </div>
+                        </div>
+                    </div>   <div class="user_box">
+                        <div class="user_info">
+                            <div>
+                                <h3>이름 혹은 회사명</h3>
+                                <p>등록 된 계정 수 : <span>2</span></p>
+                                <p>남은 일 수 : <span>253일</span></p>
+                            </div>
+                            <span class="more_btn"><img src="https://img.icons8.com/windows/16/000000/expand-arrow--v1.png"/></span>
+                            <span class="more_exit_btn"><img src="https://img.icons8.com/ios/16/000000/collapse-arrow--v1.png"/></span>
+                        </div>
+                        
+                        <div class="account_list">
+                            <div class="account_info">
+                                <h4>이름이름 <span>기사님</span></h4>
+                                <p>abcd@abcd.com</p>
+                            </div>
+                            <div class="account_info">
+                                <h4>이름이름 <span>기사님</span></h4>
+                                <p>abcd@abcd.com</p>
+                            </div>
+                            <div class="account_info">
+                                <h4>이름이름 <span>기사님</span></h4>
+                                <p>abcd@abcd.com</p>
+                            </div>
+                        </div>
+                    </div>   <div class="user_box">
+                        <div class="user_info">
+                            <div>
+                                <h3>이름 혹은 회사명</h3>
+                                <p>등록 된 계정 수 : <span>2</span></p>
+                                <p>남은 일 수 : <span>253일</span></p>
+                            </div>
+                            <span class="more_btn"><img src="https://img.icons8.com/windows/16/000000/expand-arrow--v1.png"/></span>
+                            <span class="more_exit_btn"><img src="https://img.icons8.com/ios/16/000000/collapse-arrow--v1.png"/></span>
+                        </div>
+                        
+                        <div class="account_list">
+                            <div class="account_info">
+                                <h4>이름이름 <span>기사님</span></h4>
+                                <p>abcd@abcd.com</p>
+                            </div>
+                            <div class="account_info">
+                                <h4>이름이름 <span>기사님</span></h4>
+                                <p>abcd@abcd.com</p>
+                            </div>
+                            <div class="account_info">
+                                <h4>이름이름 <span>기사님</span></h4>
+                                <p>abcd@abcd.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user_box">
+                        <div class="user_info">
+                            <div>
+                                <h3>이름 혹은 회사명</h3>
+                                <p>등록 된 계정 수 : <span>2</span></p>
+                                <p>남은 일 수 : <span>253일</span></p>
+                            </div>
+                            <span class="more_btn"><img src="https://img.icons8.com/windows/16/000000/expand-arrow--v1.png"/></span>
+                            <span class="more_exit_btn"><img src="https://img.icons8.com/ios/16/000000/collapse-arrow--v1.png"/></span>
+                        </div>
+                        
+                        <div class="account_list">
+                            <div class="account_info">
+                                <h4>이름이름 <span>기사님</span></h4>
+                                <p>abcd@abcd.com</p>
+                            </div>
+                            <div class="account_info">
+                                <h4>이름이름 <span>기사님</span></h4>
+                                <p>abcd@abcd.com</p>
+                            </div>
+                            <div class="account_info">
+                                <h4>이름이름 <span>기사님</span></h4>
+                                <p>abcd@abcd.com</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section id="calendar" class="item">
@@ -168,6 +363,7 @@
                 <div class="section_header">
                     <img src="https://img.icons8.com/small/16/000000/todo-list.png" alt="todo"/>
                     <h2 class="section_title">To Do List</h2>
+                   
                 </div>
                 <div id="todo_list" class="section_1_box">
                     <span>start</span>
