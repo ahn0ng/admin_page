@@ -50,6 +50,7 @@ $(document).on('click', '.del', function(){
 
 // 유저
 
+// more btn
 $(document).on('click', '.more_btn', function(){
   $(this).parent().parent().children('.account_list').show();
   $(this).hide();
@@ -61,6 +62,34 @@ $(document).on('click', '.more_exit_btn', function(){
   $(this).hide();
   $(this).parent().children('.more_btn').show();
 });
+
+// 검색
+
+function filter(){
+
+  var user_search, user_info, name, i;
+
+  user_search = document.getElementById("user_search").user_search.toUpperCase();
+  user_info = document.getElementsByClassName("user_info");
+
+  for(i=0;i<user_info.length;i++){
+    name = user_info[i].getElementsByClassName("name");
+    if(name[0].innerHTML.toUpperCase().indexOf(value) > -1){
+      user_info[i].style.display = "flex";
+    }else{
+      user_info[i].style.display = "none";
+    }
+  }
+}
+
+// 리펀드
+
+$(document).on('click', '.check_btn_refund', function(){
+  $(this).parent().parent().children('.refund_inprogress').hide();
+  $(this).parent().parent().children('.refund_done').show();
+});
+
+
 
 // 그리드
 
