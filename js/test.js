@@ -65,30 +65,32 @@ $(document).on('click', '.more_exit_btn', function(){
 
 // 검색
 
-function filter(){
 
-  var user_search, user_info, name, i;
-
-  user_search = document.getElementById("user_search").user_search.toUpperCase();
-  user_info = document.getElementsByClassName("user_info");
-
-  for(i=0;i<user_info.length;i++){
-    name = user_info[i].getElementsByClassName("name");
-    if(name[0].innerHTML.toUpperCase().indexOf(value) > -1){
-      user_info[i].style.display = "flex";
-    }else{
-      user_info[i].style.display = "none";
-    }
-  }
-}
 
 // 리펀드
 
 $(document).on('click', '.check_btn_refund', function(){
-  $(this).parent().parent().children('.refund_inprogress').hide();
-  $(this).parent().parent().children('.refund_done').show();
+
+  // $(this).parent().parent().children('.refund_inprogress').hide();
+  // $(this).parent().parent().children('.refund_done').show();
+  if(confirm('환불 진행을 완료하셨습니까?')){
+
+    $(this).parent().parent().children('.refund_inprogress').hide();
+    $(this).parent().parent().children('.refund_done').show();
+    
+    }else{
+    
+    alert('환불 완료 처리가 취소되었습니다.');
+    
+    };
 });
 
+
+
+  
+  
+  
+  출처: https://oomm.tistory.com/6 [Out of my mind]
 
 
 // 그리드
